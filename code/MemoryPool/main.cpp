@@ -22,9 +22,9 @@ void Test2()
     }
 }
 
-int main()
+/* int main()
 {
-    // TestMemoryPool();
+    TestMemoryPool();
     Test2();
     return 0;
-}
+} */
