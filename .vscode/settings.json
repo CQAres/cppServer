@@ -3,6 +3,8 @@
         "*.cpp": "cpp",
         "*.tcc": "cpp",
         "deque": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "functional": "cpp",
+        "iostream": "cpp"
     }
 }

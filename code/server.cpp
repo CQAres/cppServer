@@ -1,5 +1,6 @@
 #include "src/EventLoop.h"
 #include "src/Server.h"
+#include "MemoryPool/MemoryAlloc.h"
 
 int main() {
     EventLoop *loop = new EventLoop();
