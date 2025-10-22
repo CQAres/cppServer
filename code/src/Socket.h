@@ -1,10 +1,3 @@
-/******************************
-*   author: yuesong-feng
-*   
-*
-*
-******************************/
-
 #pragma once
 #include <arpa/inet.h>
 

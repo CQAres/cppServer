@@ -1,9 +1,3 @@
-/******************************
-*   author: yuesong-feng
-*   客户端、服务器共用
-*   accept，connect都支持非阻塞式IO，但只是简单处理，如果情况太复杂可能会有意料之外的bug
-*
-******************************/
 #include "Socket.h"
 #include "util.h"
 #include <unistd.h>

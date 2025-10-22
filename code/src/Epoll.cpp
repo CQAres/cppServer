@@ -1,9 +1,3 @@
-/******************************
-*   author: yuesong-feng
-*   
-*
-*
-******************************/
 #include "Epoll.h"
 #include "util.h"
 #include "Channel.h"
@@ -29,6 +23,7 @@ Epoll::~Epoll(){
 
 std::vector<Channel*> Epoll::poll(int timeout){
     std::vector<Channel*> activeChannels;
+    // 调用 epoll_wait 等待事件, 最多返回 MAX_EVENTS 个事件
     int nfds = epoll_wait(epfd, events, MAX_EVENTS, timeout);
     errif(nfds == -1, "epoll wait error");
     for(int i = 0; i < nfds; ++i){
